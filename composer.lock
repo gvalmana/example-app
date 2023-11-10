@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "161d85c2544a75fe156b60825ba4feb9",
+    "content-hash": "43f7105a42e4fde18ecca12df6abbef9",
     "packages": [
         {
             "name": "brick/math",
@@ -969,6 +969,52 @@
                 }
             ],
             "time": "2023-08-27T10:19:19+00:00"
+        },
+        {
+            "name": "gvalmana/crud-api-laravel",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gvalmana/crud-api-laravel.git",
+                "reference": "d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51",
+                "reference": "d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "type": "vcs",
+            "autoload": {
+                "psr-4": {
+                    "CrudApiRestfull\\": "src/",
+                    "CrudApiRestfull\\Controllers\\": "src/Controllers",
+                    "CrudApiRestfull\\Models\\": "src/Models",
+                    "CrudApiRestfull\\Services\\": "src/Services",
+                    "CrudApiRestfull\\Test\\": "src/Test",
+                    "CrudApiRestfull\\Middleware\\": "src/Middleware",
+                    "CrudApiRestfull\\Resources\\": "src/Resources",
+                    "CrudApiRestfull\\Enums\\": "src/Enums"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gustavo Valmaña Villalonga",
+                    "email": "gustavo.shotokai@gmail.com"
+                }
+            ],
+            "description": "Libreria para CRUD en API de Laravel",
+            "support": {
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.1.1",
+                "issues": "https://github.com/gvalmana/crud-api-laravel/issues"
+            },
+            "time": "2023-11-10T00:38:12+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5767,52 +5813,6 @@
                 }
             ],
             "time": "2023-11-03T12:00:00+00:00"
-        },
-        {
-            "name": "gvalmana/crud-api-laravel",
-            "version": "v0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51",
-                "reference": "d5f5e2dc1b4c4094f0e40a18aa69d28f82cd6d51",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0"
-            },
-            "type": "vcs",
-            "autoload": {
-                "psr-4": {
-                    "CrudApiRestfull\\": "src/",
-                    "CrudApiRestfull\\Controllers\\": "src/Controllers",
-                    "CrudApiRestfull\\Models\\": "src/Models",
-                    "CrudApiRestfull\\Services\\": "src/Services",
-                    "CrudApiRestfull\\Test\\": "src/Test",
-                    "CrudApiRestfull\\Middleware\\": "src/Middleware",
-                    "CrudApiRestfull\\Resources\\": "src/Resources",
-                    "CrudApiRestfull\\Enums\\": "src/Enums"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gustavo Valmaña Villalonga",
-                    "email": "gustavo.shotokai@gmail.com"
-                }
-            ],
-            "description": "Libreria para CRUD en API de Laravel",
-            "support": {
-                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.1",
-                "issues": "https://github.com/gvalmana/crud-api-laravel/issues"
-            },
-            "time": "2023-11-10T00:38:12+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
