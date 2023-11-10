@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "690ec7dd7179d6e1f3a652843fb86514",
+    "content-hash": "c4f9bee0b8ca947d70cfe2d3615b2bf9",
     "packages": [
         {
             "name": "brick/math",
@@ -972,16 +972,16 @@
         },
         {
             "name": "gvalmana/crud-api-laravel",
-            "version": "v0.1.8",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "473c27563146c333d6eefb249ee056b4d7384d17"
+                "reference": "5a7f38fdd2ac7fe31252fab8a06b1d70bc616947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/473c27563146c333d6eefb249ee056b4d7384d17",
-                "reference": "473c27563146c333d6eefb249ee056b4d7384d17",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/5a7f38fdd2ac7fe31252fab8a06b1d70bc616947",
+                "reference": "5a7f38fdd2ac7fe31252fab8a06b1d70bc616947",
                 "shasum": ""
             },
             "require": {
@@ -1013,10 +1013,10 @@
             ],
             "description": "Libreria para CRUD en API de Laravel",
             "support": {
-                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.1.8",
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.2.0",
                 "issues": "https://github.com/gvalmana/crud-api-laravel/issues"
             },
-            "time": "2023-11-10T02:15:21+00:00"
+            "time": "2023-11-10T02:59:35+00:00"
         },
         {
             "name": "laravel/framework",
