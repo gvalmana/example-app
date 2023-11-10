@@ -12,6 +12,9 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
+
+    public const RELATIONS = [];
+
     /**
      * The attributes that are mass assignable.
      *
