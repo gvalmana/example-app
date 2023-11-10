@@ -13,6 +13,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "gvalmana/crud-api-laravel": "^0.1.0",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
@@ -62,5 +63,14 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:gvalmana/crud-api-laravel.git",
+            "trunk-path": "trunk",
+            "branches-path": "branches",
+            "tags-path": "tags"
+        }
+    ]
 }
