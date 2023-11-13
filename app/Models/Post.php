@@ -43,4 +43,17 @@ class Post extends RestModel
         'updated_at' => 'date',
         'deleted_at' => 'date'
     ];
+    public function getPrimaryKey(): string
+    {
+        return $this->primaryKey;
+    }
+
+    public function getPrincipalAttribute(): string
+    {
+        return 'email';
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class,'user_id','id');
+    }
 }
