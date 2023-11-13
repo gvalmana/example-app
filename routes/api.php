@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +26,10 @@ Route::group(['prefix' => 'v1'], function () {
         Route::post('/', [UserController::class, 'store'])->name('users.store');
         Route::get('/select-2-list', [UserController::class, 'select2list'])->name('users.select_2_list');
         Route::get('/{id}', [UserController::class, 'show'])->name('users.show');
+    });
+    Route::group(['prefix'=>'posts'], function(){
+        Route::get('/',[PostController::class,'index'])->name('posts.index');
+        Route::get('/select-2-list',[PostController::class,'select2list'])->name('posts.select_2_list');
+        Route::get('/{id}', [PostController::class, 'show'])->name('posts.show');
     });
 });

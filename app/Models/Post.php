@@ -38,7 +38,6 @@ class Post extends RestModel
     ];
     protected $casts = [
         'name' => 'string',
-        'content' => 'text',
         'created_at' => 'date',
         'updated_at' => 'date',
         'deleted_at' => 'date'
