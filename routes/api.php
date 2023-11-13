@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostCreateOrUpdateController;
 use App\Http\Controllers\PostDeleteController;
 use App\Http\Controllers\PostListController;
 use App\Http\Controllers\UserController;
@@ -37,5 +38,6 @@ Route::group(['prefix' => 'v1'], function () {
         Route::delete('/{id}', [PostDeleteController::class, 'destroy'])->name('posts.destroy');
         Route::patch('{id}/restore', [PostDeleteController::class, 'restore'])->name('posts.restore');
         Route::patch('/restore-by-ids', [PostDeleteController::class, 'restoreByIds'])->name('posts.restore-by-ids');
+        Route::post('/',[PostCreateOrUpdateController::class,'store'])->name('posts.store');
     });
 });

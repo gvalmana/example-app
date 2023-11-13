@@ -42,6 +42,18 @@ class Post extends RestModel
         'updated_at' => 'date',
         'deleted_at' => 'date'
     ];
+    public $rules = [
+        'create' => [
+            'name'=>['required'],
+            'content'=>['required'],
+            'user_id'=>['required','exists:users,id'],
+        ],
+        'update' => [
+            'name'=>['required'],
+            'content'=>['required'],
+            'user_id'=>['required'],
+        ],
+    ];
     public function getPrimaryKey(): string
     {
         return $this->primaryKey;
