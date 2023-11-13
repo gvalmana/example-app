@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostDeleteController;
 use App\Http\Controllers\PostListController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserListController;
@@ -28,9 +29,11 @@ Route::group(['prefix' => 'v1'], function () {
         Route::get('/select-2-list', [UserListController::class, 'select2list'])->name('users.select_2_list');
         Route::get('/{id}', [UserListController::class, 'show'])->name('users.show');
     });
-    Route::group(['prefix'=>'posts'], function(){
-        Route::get('/',[PostListController::class,'index'])->name('posts.index');
-        Route::get('/select-2-list',[PostListController::class,'select2list'])->name('posts.select_2_list');
+    Route::group(['prefix' => 'posts'], function () {
+        Route::get('/', [PostListController::class, 'index'])->name('posts.index');
+        Route::get('/select-2-list', [PostListController::class, 'select2list'])->name('posts.select_2_list');
         Route::get('/{id}', [PostListController::class, 'show'])->name('posts.show');
+        Route::delete('/{id}', [PostDeleteController::class, 'destroy'])->name('posts.destroy');
+        Route::patch('{id}/restore', [PostDeleteController::class, 'restore'])->name('posts.restore');
     });
 });
