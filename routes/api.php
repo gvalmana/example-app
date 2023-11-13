@@ -19,10 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['prefix'=>'v1'], function(){
-    Route::group(['prefix'=>'users'],function(){
+Route::group(['prefix' => 'v1'], function () {
+    Route::group(['prefix' => 'users'], function () {
         Route::get('/', [UserController::class, 'index'])->name('users.index');
-        Route::get('/select-2-list',[UserController::class, 'select2list'])->name('users.select_2_list');
+        Route::post('/', [UserController::class, 'store'])->name('users.store');
+        Route::get('/select-2-list', [UserController::class, 'select2list'])->name('users.select_2_list');
         Route::get('/{id}', [UserController::class, 'show'])->name('users.show');
     });
 });
