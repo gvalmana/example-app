@@ -11,6 +11,6 @@ class UserService extends ServicesList
 
     public function __construct()
     {
-        $this->modelClass = new User();
+        $this->modelClass = new User;
     }
 }
