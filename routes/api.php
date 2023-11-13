@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostListController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserListController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,14 +24,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'v1'], function () {
     Route::group(['prefix' => 'users'], function () {
-        Route::get('/', [UserController::class, 'index'])->name('users.index');
-        Route::post('/', [UserController::class, 'store'])->name('users.store');
-        Route::get('/select-2-list', [UserController::class, 'select2list'])->name('users.select_2_list');
-        Route::get('/{id}', [UserController::class, 'show'])->name('users.show');
+        Route::get('/', [UserListController::class, 'index'])->name('users.index');
+        Route::get('/select-2-list', [UserListController::class, 'select2list'])->name('users.select_2_list');
+        Route::get('/{id}', [UserListController::class, 'show'])->name('users.show');
     });
     Route::group(['prefix'=>'posts'], function(){
-        Route::get('/',[PostController::class,'index'])->name('posts.index');
-        Route::get('/select-2-list',[PostController::class,'select2list'])->name('posts.select_2_list');
-        Route::get('/{id}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/',[PostListController::class,'index'])->name('posts.index');
+        Route::get('/select-2-list',[PostListController::class,'select2list'])->name('posts.select_2_list');
+        Route::get('/{id}', [PostListController::class, 'show'])->name('posts.show');
     });
 });

@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
 use App\Services\UserService;
-use CrudApiRestfull\Controllers\RestController;
+use CrudApiRestfull\Controllers\RestListController;
 
-final class UserController extends RestController
+final class UserListController extends RestListController
 {
     public function __construct(UserService $userService)
     {

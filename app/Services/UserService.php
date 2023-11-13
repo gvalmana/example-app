@@ -3,8 +3,9 @@ namespace App\Services;
 
 use App\Models\User;
 use CrudApiRestfull\Services\Services;
+use CrudApiRestfull\Services\ServicesList;
 
-class UserService extends Services
+class UserService extends ServicesList
 {
     public $modelClass = User::class;
 

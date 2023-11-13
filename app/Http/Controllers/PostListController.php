@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\PostResource;
 use App\Services\PostService;
-use CrudApiRestfull\Controllers\RestController;
+use CrudApiRestfull\Controllers\RestListController;
 
-final class PostController extends RestController
+final class PostListController extends RestListController
 {
 
     public function __construct(PostService $postService)
