@@ -51,7 +51,7 @@ class Post extends RestModel
         'update' => [
             'name'=>['required'],
             'content'=>['required'],
-            'user_id'=>['required'],
+            'user_id'=>['required','exists:users,id'],
         ],
     ];
     public function getPrimaryKey(): string
