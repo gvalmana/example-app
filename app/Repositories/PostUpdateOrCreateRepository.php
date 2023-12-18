@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services;
+namespace App\Repositories;
 
 use App\Models\Post;
-use CrudApiRestfull\Repository\CreateOrUpdateRepository;
+use CrudApiRestfull\Repositories\CreateOrUpdateRepository;
 
 final class PostUpdateOrCreateRepository extends CreateOrUpdateRepository
 {

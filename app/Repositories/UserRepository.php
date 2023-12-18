@@ -1,10 +1,10 @@
 <?php
-namespace App\Services;
+namespace App\Repositories;
 
 use App\Models\User;
-use CrudApiRestfull\Repositories\BaseRepository;
+use CrudApiRestfull\Repositories\ListRepository;
 
-class UserRepository extends BaseRepository
+class UserRepository extends ListRepository
 {
     public $modelClass = User::class;
 

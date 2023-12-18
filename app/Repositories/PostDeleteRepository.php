@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Services;
+namespace App\Repositories;
 
 use App\Models\Post;
-use CrudApiRestfull\Repository\ListRepository;
+use CrudApiRestfull\Repositories\DeleteRepository;
 
-class PostListRepository extends ListRepository
+class PostDeleteRepository extends DeleteRepository
 {
-
     public $modelClass= Post::class;
 
     public function __construct()

@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
-use App\Services\UserService;
 use CrudApiRestfull\Controllers\RestListController;
-
+use App\Repositories\UserRepository;
 final class UserListController extends RestListController
 {
-    public function __construct(UserService $userService)
+    public function __construct(UserRepository $userRepository)
     {
-        $this->service = $userService;
+        $this->repository = $userRepository;
         $this->apiResource = UserResource::class;
     }
 }
