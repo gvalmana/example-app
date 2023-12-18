@@ -3,9 +3,9 @@
 namespace App\Services;
 
 use App\Models\Post;
-use CrudApiRestfull\Services\ServicesList;
+use CrudApiRestfull\Repository\ListRepository;
 
-class PostListService extends ServicesList
+class PostListRepository extends ListRepository
 {
 
     public $modelClass= Post::class;

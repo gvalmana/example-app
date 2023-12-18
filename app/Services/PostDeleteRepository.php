@@ -3,9 +3,9 @@
 namespace App\Services;
 
 use App\Models\Post;
-use CrudApiRestfull\Services\ServicesDelete;
+use CrudApiRestfull\Repository\DeleteRepository;
 
-class PostDeleteService extends ServicesDelete
+class PostDeleteRepository extends DeleteRepository
 {
     public $modelClass= Post::class;
 

@@ -3,9 +3,9 @@
 namespace App\Services;
 
 use App\Models\Post;
-use CrudApiRestfull\Services\ServicesCreateOrUpdate;
+use CrudApiRestfull\Repository\CreateOrUpdateRepository;
 
-final class PostUpdateOrCreateService extends ServicesCreateOrUpdate
+final class PostUpdateOrCreateRepository extends CreateOrUpdateRepository
 {
     public $modelClass= Post::class;
 
