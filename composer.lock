@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7093df10aed34ad83398f2e90970abe7",
+    "content-hash": "d7d874a64d5988c8c254450e374c5df8",
     "packages": [
         {
             "name": "brick/math",
@@ -1047,16 +1047,16 @@
         },
         {
             "name": "gvalmana/crud-api-laravel",
-            "version": "v0.2.5",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "0a45db0bc7125abe2fa46c7165a7885d95a221e2"
+                "reference": "65572652826e1524c19713b352ed4cba4780a6ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/0a45db0bc7125abe2fa46c7165a7885d95a221e2",
-                "reference": "0a45db0bc7125abe2fa46c7165a7885d95a221e2",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/65572652826e1524c19713b352ed4cba4780a6ce",
+                "reference": "65572652826e1524c19713b352ed4cba4780a6ce",
                 "shasum": ""
             },
             "require": {
@@ -1088,10 +1088,10 @@
             ],
             "description": "Libreria para CRUD en API de Laravel",
             "support": {
-                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.2.5",
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v0.2.6",
                 "issues": "https://github.com/gvalmana/crud-api-laravel/issues"
             },
-            "time": "2023-12-18T16:28:06+00:00"
+            "time": "2023-12-18T19:38:05+00:00"
         },
         {
             "name": "laravel/framework",
