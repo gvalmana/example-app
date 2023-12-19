@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\PostResource;
-use App\Services\PostDeleteService;
+use App\Repositories\PostDeleteRepository;
 use CrudApiRestfull\Controllers\RestDeleteController;
 
 final class PostDeleteController extends RestDeleteController
 {
-    public function __construct(PostDeleteService $postService)
+    public function __construct(PostDeleteRepository $postDeleteRepository)
     {
-        $this->service = $postService;
+        $this->repository = $postDeleteRepository;
         $this->apiResource = PostResource::class;
     }
 }

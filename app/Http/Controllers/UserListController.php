@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
-use CrudApiRestfull\Controllers\RestListController;
 use App\Repositories\UserRepository;
-final class UserListController extends RestListController
+use CrudApiRestfull\Controllers\RestController;
+
+final class UserListController extends RestController
 {
     public function __construct(UserRepository $userRepository)
     {

@@ -27,7 +27,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1'], function () {
     // Incluir archivo de rutas de usuarios
     include 'users.php';
-
     // Incluir archivo de rutas de publicaciones (posts)
     include 'posts.php';
 });

@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\PostResource;
-use App\Services\PostUpdateOrCreateService;
+use App\Repositories\PostUpdateOrCreateRepository;
 use CrudApiRestfull\Controllers\RestCreateOrUpdateController;
 
 final class PostCreateOrUpdateController extends RestCreateOrUpdateController
 {
-    public function __construct(PostUpdateOrCreateService $postService)
+    public function __construct(PostUpdateOrCreateRepository $postUpdateOrCreateRepository)
     {
-        $this->service = $postService;
+        $this->repository = $postUpdateOrCreateRepository;
         $this->apiResource = PostResource::class;
     }
 }
